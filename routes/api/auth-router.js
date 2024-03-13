@@ -21,4 +21,10 @@ authRouter.post(
   authControllers.signin
 );
 
+authRouter.get("/google", authControllers.google);
+
+authRouter.get("/google-redirect", authControllers.googleRedirect);
+
+authRouter.post("/signout", authControllers.signout);
+
 export default authRouter;
